@@ -43,11 +43,6 @@ function next_task() {
 function work_done() {
 	d = 0
 	for (w in work) if (work[w][0] > 0) d = 1
-
-	printf("%4d ", seconds)
-	for (w in work) printf("%1s", work[w][1])
-	print ""
-
 	return d || (length(task) > 0)
 }
 
